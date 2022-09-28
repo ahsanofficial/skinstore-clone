@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #f2f2f2;  
+    }
+    #rmain{
+        width: 40%;
+        height: 1150px;
+        border: 1px solid black;
+        margin: auto;
+        background-color: white;
+    }
+    #r2main{
+        width: 90%;
+        height: 700px;
+        /* border: 1px solid black; */
+        margin: auto;
+    }
+
+    #badainn{
+        width: 90%;
+        height: 100px;
+        /* border: 1px solid black; */
+        display: flex;
+        margin-top: 5%;
+    }
+    #badainn>div{
+        width: 45%;
+        height: 40px;
+        border: 1px solid black;
+        margin: auto;
+        cursor: pointer;
+    }
+    .lastm{
+        display: flex;
+        margin: auto;
+    }
+    .lastm>p{
+        margin-top: 10px;
+    }
+    
+
+    /* -------------- */
+
+    #r2main>input{
+        width: 100%;
+        height: 40px;
+    }
+    #inr2{
+        width: 100%;
+        height: 120px;
+        background-color: #f2f2f2;
+    }
+    #inr2>input{
+        width: 95%;
+        height: 40px;
+    }
+    #r2main>button{
+        width: 100%;
+        height: 45px;
+        margin-top: 4%;
+        background-color:#2e3337;
+        color: white;
+    }
+    #r2main>h6{
+        margin-top: 1px;
+    }
+    #inr2>h6{
+        margin-top: 1px;
+    }
+
+    
+   
+</style>
+<body>
+    <form id="form">
+    <div id="rmain">
+        <div id="r2main">
+
+            <div id="as">
+
+            <h3>About You</h3>
+            <h4>Sign Up With</h4>
+            </div>
+            
+    
+            <div id="badainn">
+                <div class="lastm">
+                    <img src="https://img.icons8.com/color/2x/facebook.png" alt="">
+                    <p>facebook</p>
+    
+                </div>
+
+                <div class="lastm">
+                    <img src="https://img.icons8.com/color/2x/google-logo.png" alt="">
+                    <p>Google</p>
+                </div>
+            </div>
+            <hr>
+            <h4>Or create an email account</h4>
+           
+                <p>*Full Name</p>
+                <input type="text">
+                <p>*Email address</p>
+                <input type="text"  id="email">
+                <p>*Confirm Email address</p>
+                <input type="text">
+                <p>*Password</p>
+                <input type="password" id="password">
+                <p>*Conform Password</p>
+                <input type="Password" >
+                <p>Cell Phone Number (Optional)</p>
+                <input type="number">
+                <h6>We will use this number to send occasional promotional messages.</h6>
+                <div id="inr2">
+                    <h5 id="refe">Referal Coad (optional)</h5>
+                    <input type="text">
+                    <h6>* Your referrals discount is automatically applied at cart</h6>
+                </div>
+    
+                <button style="cursor: pointer;" id="submit">CONTINUE</button>
+                <P>By proceeding, you are confirming that you agree to our <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a> </P>
+          
+        
+
+        </div>
+        
+
+    </div>
+</form>
+
+</body>
+
+</html>
+
+<script>
+
+    function User_data(e,p)
+
+    {
+      
+        this.email=e;
+        this.pass=p;
+    }
+     
+       document.getElementById("form").addEventListener("submit",MYFun)
+
+       let arr=JSON.parse(localStorage.getItem("User_Data"))||[]
+
+       function MYFun()
+       {
+           event.preventDefault()
+
+           let email=document.getElementById("email").value;
+
+           let pass= document.getElementById("password").value;
+
+           let p= new User_data(email,pass)
+
+           console.log(p)
+
+
+           arr.push(p)
+
+           console.log(arr)
+
+           localStorage.setItem("User_Data",JSON.stringify(arr))
+
+
+       }
+</script>

@@ -1,0 +1,40 @@
+#container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#custemer {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    border: 1px solid gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#BUTTON {
+    width: 350px;
+    padding: 5px;
+    height: 50px;
+    background-color: white;
+}
+
+#container button {
+    width: 350px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+#maindiv {
+    border: 1px solid gray;
+    width: 400px;
+    height: 400px;
+}
+
+
+#maindiv>img {
+    margin-left: 35px;
+    margin-top: 20px;
+}

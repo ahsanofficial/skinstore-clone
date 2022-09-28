@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+ #container{
+            width: 90%;
+            margin: auto;
+            height: 600px;
+            /* border: 1px solid red; */
+            display: block;
+        }
+
+        #first{
+            width: 100%;
+            height: 10%;
+            /* border: 1px solid blue; */
+        }
+
+        #first>p{
+            font-family: 'Poly', serif;
+            font-size: 22px;
+            margin-top: 60px;
+        }
+
+        #second{
+            width: 85%;
+            /* margin-top: 5px; */
+            height: 5%;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+
+        .name{
+            font-family: 'lato', serif;
+            margin-top: 20px;
+            font-size: 14.5px;
+        }
+
+        .matter{
+            font-family: 'lato', serif;
+            font-size: 14px;
+        } 
+
+        #second>div{
+            font-family: 'lato', serif;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 12px;
+        }
+
+        #second>div:nth-child(1){
+            width: 50%;
+            /* border: 1px solid red; */
+        }
+
+        .total{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        .item_details{
+            width: 100%;
+            /* height: 200px; */
+            display: flex;
+            /* border: 1px solid black; */
+            /* padding-top: 20px; */
+            box-sizing: border-box;
+            padding-top: 10px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            margin-left: 30px;
+        }
+
+        .img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .price{
+            font-family: 'lato', serif;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .total_count{
+            font-family: 'lato', serif;
+            margin-left: 240px;
+            margin-top: 20px;
+        }
+
+        .total_amount{
+            font-family: 'lato', serif;
+            margin-left: 260px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .div_a{
+            width: 23%;
+            /* border: 1px solid red; */
+        }
+
+        #fourth{
+            display: flex;
+            width: 86%;
+            /* border: 1px solid blue; */
+            height: 50px;
+            /* justify-content: space-between; */
+            padding-top: 50px;
+        }
+
+        .rewards{
+            /* border: 1px solid black; */
+            font-family: 'Poly', serif;
+            font-weight: bold;
+        }
+
+        .fourth_sub{
+            display: flex;
+            /* border: 1px solid red; */
+            width: 100%;
+            font-family: 'lato', serif;
+            margin-left: 82%;
+            /* justify-content: right; */
+            /* text-align: center; */
+        }
+
+        /* .fourth_sub>div{
+
+           margin-right: 50px;
+           width: 100%;
+        } */
+
+        .subtotal{
+            font-weight: bold;
+            margin-top: 0px;
+            margin-left: 65px;
+        }
+
+       .form{
+           margin: auto;
+           padding-left: 33%;
+           border-top: 1px solid gray;
+           border-bottom: 1px solid gray;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           /* border: 1px solid black; */
+       }
+
+       #code{
+           border: 1px solid black;
+           background-color: white;
+           width: 350px;
+           height: 45px;
+           /* padding: 10px 100px 10px 0px; */
+       }
+
+       #submit{
+           background-color: #222222;
+           color: white;
+           width: 100px;
+           height: 45px;
+           font-family: 'lato', serif;
+       }
+
+       .last{
+           display: flex;
+           width: 100%;
+           margin: auto;
+           justify-content: space-between;
+           padding-top: 10px;
+       }
+
+       .button_1{
+           border: 2px solid black;
+           font-family: 'lato', serif;
+           background-color: white;
+           width: 240px;
+           height: 45px;
+           font-size: 15px;
+       }
+
+       .button_2{
+        border: 2px solid #222222;
+           font-family: 'lato', serif;
+           background-color: #222222;
+           color: white;
+           width: 280px;
+           height: 45px;
+           font-size: 15px;
+       }
+
+       /* #counter{
+           display: flex;
+       } */
+
+       #remove{
+
+           height: 20px;
+           margin-left: 100px;
+           margin-top: 20px;
+           border: none;
+       } 
+
+       #remove:hover{
+
+            background-color: white;
+            cursor: pointer;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="first">
+            <p>Your Cart</p>
+        </div>
+        <div id="second">
+            <div class="items">Items</div>
+            <div class="total">
+            <div>Price</div>
+                <div>Quantity</div>
+           
+            <div>Subtotal</div>
+            <!-- <div></div> -->
+            </div>
+        </div>
+        <div id="third"></div>
+        <div id="fourth">
+            <!-- <div class="rewards">Rewards members earn 1763 points on this order</div> -->
+            <div class="fourth_sub">
+                <div>Cart Subtotal:</div>
+                <div><p class="subtotal">$</p></div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" id="form">
+            <input type="text" placeholder="Got a coupon code? Enter it here:" id="code">
+            <input type="submit" value="ADD" id="submit">
+            </form>
+        </div>
+        <div class="last">
+            <div><button class="button_1">CONTINUE SHOPPING</button></div>
+            <div><a href="/Group_project_skinstore_website/my_project/checkout/checkout_details.html"><button class="button_2">CHECKOUT SECURELY NOW</button></a></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+// document.querySelector(".account").addEventListener("click",account);
+//     function account(){
+//         window.location.href="login.html";
+//     }
+//     // log in page
+//     document.querySelector(".button_2").addEventListener("click",checkout)
+//     function checkout(){
+//         window.location.href="checkout.html";
+//     }
+
+    var items= JSON.parse(localStorage.getItem("cartLists"))
+    console.log(items)
+    var subtotal=items.reduce(function(sum,el,i,ar){
+            var price=el.price;
+            // price=price.slice(1);
+            return sum+Number(price);
+        },0)
+
+        document.querySelector(".subtotal").append(subtotal);
+ 
+    
+        items.map(function(el,index){
+        
+        var div1=document.createElement("div");
+        div1.setAttribute("class","item_details");
+
+        var div2=document.createElement("div");
+        var img=document.createElement("img");
+        img.src=el.src;
+        img.setAttribute("class","img")
+        div2.append(img);
+        // console.log(div2)
+
+        var a=document.createElement("div")
+        a.setAttribute("class","div_a")
+        var div3=document.createElement("div");
+        div3.setAttribute("class","name")
+        div3.innerText=el.name;
+        
+
+        var div4=document.createElement("div");
+        div4.setAttribute("class","price");
+        div4.innerText=el.price;
+
+        let div5=document.createElement("button")
+        div5.innerText="x";
+
+        div5.addEventListener("click",function(){
+
+            removeItem(el,index)
+        })
+
+        div5.setAttribute("id","remove")
+
+        var count_item=el.name;
+        var count=0;
+        var amount;
+        for(var i=0; i<items.length; i++)
+        {
+            if(items[i].name==count_item)
+            {
+                count++;
+                amount=items[i].price;
+                // amount=amount.slice(1)
+            }
+        }
+        var total=count;
+        var total_count=document.createElement("div");
+        total_count.setAttribute("class","total_count");
+        total_count.innerText=count;
+
+        var total_amount=document.createElement("div");
+        var final_amount=Number(count)*Number(amount);
+
+        final_amount="$"+final_amount
+        total_amount.setAttribute("class","total_amount")
+        total_amount.innerText=final_amount;
+
+        a.append(div3)
+        div1.append(div2,a,div4,total_count,total_amount,div5);
+        document.querySelector("#third").append(div1);
+    })
+
+    function removeItem(el,index){
+
+        items.splice(index,1)
+
+        localStorage.setItem("cartLists",JSON.stringify(items))
+
+        window.location.reload()
+    }
+</script>

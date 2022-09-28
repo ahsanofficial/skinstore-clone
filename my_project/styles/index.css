@@ -1,0 +1,150 @@
+* {
+    font-family: sans-serif;
+}
+#productDisplay{
+   width: 90%;
+   display: flex;
+   margin: auto;
+   justify-content: space-evenly;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+}
+
+.imageContainer {
+width: 100%;
+margin: auto;
+display: inline-block;
+
+
+position: relative;
+text-align: center;
+color: rgb(64, 11, 124);
+/* // border: 1px solid black; */
+}
+.caption{
+font-size: 25px;
+font-weight: bolder;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.BL {
+position: absolute;
+bottom: 65%;
+left: 13%;
+}
+
+.imageContainer img{
+width: 90%;
+height: 500px;
+}
+
+
+#bathbody{
+width: 400px;
+height: 160px;
+}   
+#para{
+width: 550px;
+
+}
+
+.para{
+position: absolute;
+bottom: 48%;
+left: 8%;
+}
+
+#para > p{
+font-family: sans-serif;
+color: rgb(84, 82, 82);
+font-weight: lighter;
+}
+.imageContainer > button {
+background-color: black;
+
+width: 150px;
+color: white;
+padding: 5px 5px 5px 5px;
+}
+
+.button {
+position: absolute;
+font-weight: lighter;
+font-size: medium;
+bottom: 42%;
+left: 20%;
+}
+
+#roundimg{
+display: flex;
+width: 90%;
+padding-top: 30px;
+justify-content: space-between;
+margin: auto;
+/* border: 1px solid red; */
+}
+
+#roundimg div{
+width: 90%;
+height: 360px;
+gap: 20px;
+text-align: center;
+/* border: 2px solid red; */
+}
+
+#roundimg img{
+width: 90%;
+height: 370px;
+border-radius: 50%;
+}
+
+#roundimg button {
+word-wrap: 80px;
+ height: 34px;
+ background-color: white;
+ padding: 10px;
+border: 1px solid rgb(111, 110, 110);
+}
+
+#newdata{
+display: flex;
+}
+
+
+#newdata button {
+word-wrap: 80px;
+ height: 34px;
+ background-color: white;
+ padding: 10px;
+border: 1px solid rgb(111, 110, 110);
+}
+#newdata img{
+width: 90%;
+height: 370px;
+border-radius: 50%;
+}
+
+#newdata div{
+width: 90%;
+height: 360px;
+gap: 20px;
+text-align: center;
+/* border: 2px solid red; */
+}
+
+#body{
+text-align: center;
+margin-top: 14%;
+font-weight: 300;
+}
+
+#bodypara {
+text-align: center;
+width: 90%;
+margin: auto;
+font-size: 1.5ch;
+color: grey;
+
+}

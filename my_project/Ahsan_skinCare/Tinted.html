@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinted</title>
+    <link rel="stylesheet" href="./style/product.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <hr>
+    <div class="productDescription">
+        <!-- <div class="main"> -->
+        <p id="main-heading">Tinted</p>
+        <p id="results" class="para">468 results</p>
+        <p class="para">Keep your skin clean and refreshed with our extensive range of skin cleansers. We have a
+            thorough
+            choice of
+            cleansers, micellar waters and make-up removers designed to cater for each individual skin type and concern,
+            from a wide range of brands. Whether you suffer from sensitive, oily or acne prone skin, you can achieve the
+            results you require from our tailored choices. For a professional cleanse, try our range of<span
+                id="dots">...</span><span id="more"> premium brands such as Caudalie, Avene and Decleor. For a more
+                medicated, specialized cleanse, why not check out SkinCeuticals, Murad or Paula's Choice?
+                Remove dirt, grime and impurities effectively by ensuring one of our cleansers is incorporated into your
+                daily skin care regime.
+            </span></p>
+        <a onclick="myFunction()" id="myBtn" class="para">Read more</a>
+        <!-- </div> -->
+
+    </div>
+
+    <div class="line"></div>
+
+    <div id="container">
+        <li>
+            <a href="#"> Sort by price</a>
+            <!-- <a href="#"><img src="/image/down-arrow.png" alt="" /></a> -->
+
+            <div class="submenu">
+                <ul>
+                    <li sort="lth" onclick="sortAscending()" class="sort">
+                        price low to high
+                    </li>
+                    <li sort="htl" onclick="sortDescending()" class="sort">
+                        price hight to low
+                    </li>
+                    <li sort="popularity">popularity</li>
+                </ul>
+            </div>
+
+        </li>
+
+        <input id="search" oninput="search()" placeholder="Search" />
+        <li>
+            <span> <a href="#">Category </a> </span>
+            <!-- <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span> -->
+            <div class="submenu submenu-1">
+                <ul>
+                    <li>Hair Preparation</li>
+                    <li>Hair styling</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <span> <a href="#">Brand</a> </span>
+            <!-- <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span> -->
+            <div class="submenu submenu-1 submenu-2">
+                <ul>
+                    <li>Afro-Caribbean</li>
+                    <li>Braided</li>
+                    <li>Colored</li>
+                    <li>Curly & Wavy</li>
+                    <li>Damaged</li>
+                    <li>Dry</li>
+                    <li>Fine</li>
+                    <li>Frizzy</li>
+                    <li>Graying</li>
+                    <li>Long</li>
+                    <li>Normal</li>
+                    <li>Oily</li>
+                    <li>Thick</li>
+                    <li>Thinning</li>
+                    <li>Weakened</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <span> <a href="#">Electrical Hair Tools</a> </span>
+            <!-- <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>  -->
+            <div class="submenu submenu-1">
+                <ul>
+                    <li>Shampoo</li>
+                    <li>Conditioner</li>
+                    <li>Dry Shampoo</li>
+                    <li>Hair & Scalp Treatments</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <span> <a href="#">price</a> </span>
+            <!-- <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span> -->
+            <div class="submenu submenu-1">
+                <ul>
+                    <li>Curl Enhancers</li>
+                    <li>Hair Cream</li>
+                    <li>Hair Gel</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <span> <a href="#">Hair Products</a> </span>
+            <!-- <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span> -->
+            <div class="submenu submenu-1">
+                <ul>
+                    <li>Anti-Frizz</li>
+                    <li>Color Protection</li>
+                    <li>Damage Repair</li>
+                    <li>Hydrating</li>
+                    <li>Volumizing</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <span> <a href="#">Range</a> </span>
+            <!-- <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span> -->
+            <div class="submenu submenu-1">
+                <ul>
+                    <li>Karaite</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <span> <a href="#">Reviews</a> </span>
+            <!-- <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span> -->
+            <div class="submenu sub submenu-1">
+                <ul>
+                    <li>price low to high</li>
+                    <li>price hight to low</li>
+                </ul>
+            </div>
+        </li>
+    </div>
+    <div class="line"></div>
+    <div id="productDisplay"></div>
+<hr>
+<div id="footer"></div>
+    <script>
+    var productdata =[
+    {
+      "productBlock_link href": "https://www.skinstore.com/bioeffect-egf-eye-serum-6ml/12434373.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12434373-1744821040696653.jpg",
+      "name": "BIOEFFECT EGF Eye Serum 6ml",
+      "papBanner_text": "Select your Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "4.0 Stars 4 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 4,
+      "productBlock_reviewCount": 4,
+      "price": "95.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "BIOEFFECT EGF Eye Serum 6ml",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/q-a-caffeine-eye-serum-10ml/12328676.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12328676-1244865558056419.jpg",
+      "name": "Q+A Caffeine Eye Serum 10ml",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "5.0 Stars 1 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 1,
+      "price": "9.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Q+A Caffeine Eye Serum 10ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/skinceuticals-aox-eye-gel/11292112.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11292112-1124892768220636.jpg",
+      "name": "SkinCeuticals AOX Eye Gel",
+      "papBanner_text": "SkinCeuticals Gift",
+      "papPopup_text": "Receive a SkinCeuticals Phyto Corrective Gel 4ml (Free Gift) when you spend 150 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/skinceuticals/all.list",
+      "visually-hidden": "3.5 Stars 2 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 3.5,
+      "productBlock_reviewCount": 2,
+      "price": "98.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "SkinCeuticals AOX Eye Gel",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/12608561-1024820032623024.png",
+      "papFreeGift_title": "SkinCeuticals Phyto Corrective Gel 4ml",
+      "papFreeGift_saving": "9.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/estee-lauder-advanced-night-repair-eye-supercharged-complex-synchronized-recovery-15ml/11831873.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11831873-1434918739681049.jpg",
+      "name": "Estée Lauder Advanced Night Repair Eye Supercharged Complex Synchronized Recovery 15ml",
+      "papBanner_text": "Select your Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "4.0 Stars 3 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 4,
+      "productBlock_reviewCount": 3,
+      "price": "64.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Estée Lauder Advanced Night Repair Eye Supercharged Complex Synchronized Recovery 15ml",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/strivectin-peptight-360-tightening-eye-serum-1-fl.-oz/12605298.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12605298-1994901837876286.jpg",
+      "name": "StriVectin Peptight 360° Tightening Eye Serum 1 fl. oz",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "5.0 Stars 1 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 1,
+      "price": "69.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "StriVectin Peptight 360° Tightening Eye Serum 1 fl. oz",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/revolution-skincare-targeted-under-eye-serum-5-caffeine-hyaluronic-acid-serum/12589085.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12589085-1504949556563211.jpg",
+      "name": "Revolution Skincare Targeted Under Eye Serum - 5% Caffeine + Hyaluronic Acid Serum",
+      "papBanner_text": "Save 25%",
+      "papPopup_text": "Discount has been applied to the MSRP. Offer valid for a limited time only.",
+      "papPopup_link href": "https://www.skinstore.com/auto-pap/save-25.list",
+      "visually-hidden": "5.0 Stars 1 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 1,
+      "price": "7.50",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Revolution Skincare Targeted Under Eye Serum - 5% Caffeine + Hyaluronic Acid Serum",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/perricone-md-essential-fx-acyl-glutathione-eyelid-lift-serum/11833577.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11833577-1424786785878868.jpg",
+      "name": "Perricone MD Essential Fx Acyl-Glutathione: Eyelid Lift Serum",
+      "papBanner_text": "25% off SPF's",
+      "papPopup_text": "Discount has been applied to the cart automatically for valid products. Offer valid for a limited time only.",
+      "papPopup_link href": "https://www.skinstore.com/offers/category/spf.list",
+      "visually-hidden": "5.0 Stars 3 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 3,
+      "price": "115.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Perricone MD Essential Fx Acyl-Glutathione: Eyelid Lift Serum",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/skinceuticals-age-and-eye-defying-regimen/11976677.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11976677-1304632279603717.jpg",
+      "name": "SkinCeuticals Anti-Aging Regimen",
+      "papBanner_text": "SkinCeuticals Gift",
+      "papPopup_text": "Receive a SkinCeuticals Phyto Corrective Gel 4ml (Free Gift) when you spend 150 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/skinceuticals/all.list",
+      "visually-hidden": "4.0 Stars 1 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 4,
+      "productBlock_reviewCount": 1,
+      "price": "266.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "SkinCeuticals Anti-Aging Regimen",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/12608561-1024820032623024.png",
+      "papFreeGift_title": "SkinCeuticals Phyto Corrective Gel 4ml",
+      "papFreeGift_saving": "9.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/dermalogica-biolumin-c-eye-serum-15ml/12442989.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12442989-9194737510904827.jpg",
+      "name": "Dermalogica Biolumin-C Eye Serum 15ml",
+      "papBanner_text": "42 Dermalogica Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/dermalogica/view-all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "85.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Dermalogica Biolumin-C Eye Serum 15ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13197366-1804899279050604.jpg",
+      "papFreeGift_title": "Dermalogica Multi Masking Kit",
+      "papFreeGift_saving": "42.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/vichy-liftactiv-anti-ageing-serum-10-eyes-and-lashes-15ml/11428972.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11428972-1174871320671834.jpg",
+      "name": "VICHY LiftActiv Anti-Ageing Serum 10 Eyes and Lashes 15ml",
+      "papBanner_text": "Vichy Gift",
+      "papPopup_text": "Receive a Vichy LiftActiv Night Supreme when you spend 50 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/vichy/all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "35.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "VICHY LiftActiv Anti-Ageing Serum 10 Eyes and Lashes 15ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/12451553-1094744623980556.jpg",
+      "papFreeGift_title": "Vichy LiftActiv Night Supreme",
+      "papFreeGift_saving": "16.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/aesop-parsley-seed-anti-oxidant-eye-serum-15ml/10363561.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/10363561-1154896383980134.jpg",
+      "name": "Aesop Parsley Seed Anti-Oxidant Eye Serum 15ml",
+      "papBanner_text": "Select your Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "81.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Aesop Parsley Seed Anti-Oxidant Eye Serum 15ml",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/skin-authority-5-day-dramatic-eye-lift/11465519.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11465519-6354483722918522.jpg",
+      "name": "Skin Authority 5 Day Dramatic Eye Lift",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "5.0 Stars 1 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 1,
+      "price": "28.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Skin Authority 5 Day Dramatic Eye Lift",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/obagi-medical-elastiderm-eye-complete-complex-serum/11288910.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11288910-4204871571983463.jpg",
+      "name": "Obagi Medical ELASTIderm Eye Complete Complex Serum",
+      "papBanner_text": "Obagi Gift",
+      "papPopup_text": "Receive an Obagi Nu-Derm Gentle Cleanser when you spend 100 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/obagi/all.list",
+      "visually-hidden": "4.33 Stars 3 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 4.33,
+      "productBlock_reviewCount": 3,
+      "price": "115.50",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Obagi Medical ELASTIderm Eye Complete Complex Serum",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13219736-1944899001622553.jpg",
+      "papFreeGift_title": "Obagi Nu-Derm Gentle Cleanser 2.0 fl. oz",
+      "papFreeGift_saving": "13.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/hydropeptide-uplifting-eye-gel/11287841.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11287841-3767747534004144.jpg",
+      "name": "HydroPeptide Uplifting Eye Gel",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "72.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "HydroPeptide Uplifting Eye Gel",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/elemis-pro-collagen-insta-smooth-primer-50ml/12095041.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12095041-2004891244987862.jpg",
+      "name": "Elemis Pro-Collagen Insta-Smooth Primer 50ml",
+      "papBanner_text": "32 Elemis Gift",
+      "papPopup_text": "Receive an Elemis Pro Collagen Marine Moisture Essence 28ml (32) when you spend 60 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/elemis/view-all.list",
+      "visually-hidden": "5.0 Stars 1 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 1,
+      "price": "79.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Elemis Pro-Collagen Insta-Smooth Primer 50ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/12935072-2084869157258701.jpg",
+      "papFreeGift_title": "Elemis Pro-Collagen Marine Moisture Essence 28ml (32)",
+      "papFreeGift_saving": "32.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/elemis-absolute-eye-serum-15-ml/10366010.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/10366010-7204891240886991.jpg",
+      "name": "Elemis Absolute Eye Serum 15ml",
+      "papBanner_text": "32 Elemis Gift",
+      "papPopup_text": "Receive an Elemis Pro Collagen Marine Moisture Essence 28ml (32) when you spend 60 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/elemis/view-all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "52.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Elemis Absolute Eye Serum 15ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/12935072-2084869157258701.jpg",
+      "papFreeGift_title": "Elemis Pro-Collagen Marine Moisture Essence 28ml (32)",
+      "papFreeGift_saving": "32.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/revolution-skincare-toning-boost-bakuchiol-eye-cream-15ml/12589147.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12589147-4134789675902930.jpg",
+      "name": "Revolution Skincare Toning Boost Bakuchiol Eye Cream 15ml",
+      "papBanner_text": "Save 25%",
+      "papPopup_text": "Discount has been applied to the MSRP. Offer valid for a limited time only.",
+      "papPopup_link href": "https://www.skinstore.com/auto-pap/save-25.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "9.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Revolution Skincare Toning Boost Bakuchiol Eye Cream 15ml",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/dermalogica-stress-positive-eye-lift-25ml/11434924.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11434924-8464871805770367.jpg",
+      "name": "Dermalogica Stress Positive Eye Lift 25ml",
+      "papBanner_text": "42 Dermalogica Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/dermalogica/view-all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "69.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Dermalogica Stress Positive Eye Lift 25ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13197366-1804899279050604.jpg",
+      "papFreeGift_title": "Dermalogica Multi Masking Kit",
+      "papFreeGift_saving": "42.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/chantecaille-gold-energizing-eye-serum-15ml/11219080.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11219080-1754786222776030.jpg",
+      "name": "Chantecaille Gold Energizing Eye Serum 15ml",
+      "papBanner_text": "Chantecaille Gift",
+      "papPopup_text": "Receive a Chantecaille Radiance Elixir 4ml (28) when you spend 80 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/chantecaille/view-all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "212.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Chantecaille Gold Energizing Eye Serum 15ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13225639-1734885468635939.jpg",
+      "papFreeGift_title": "Chantecaille Radiance Elixir 4ml",
+      "papFreeGift_saving": "28.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/pai-skincare-system-d-schisandra-and-ceramide-cooling-eye-serum-15ml/12748238.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12748238-1184904678859318.jpg",
+      "name": "Pai Skincare System D Schisandra and Ceramide Cooling Eye Serum 15ml",
+      "papBanner_text": "22 Pai Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/pai/view-all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "59.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Pai Skincare System D Schisandra and Ceramide Cooling Eye Serum 15ml",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13123309-1724882392316701.jpg",
+      "papFreeGift_title": "Pai Skincare Double Cleanse Kit",
+      "papFreeGift_saving": "22.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/revolution-beauty-nourishing-avocado-eye-cream/12589145.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12589145-2734789675740459.jpg",
+      "name": "Revolution Skincare Nourishing Avocado Eye Cream",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "12.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Revolution Skincare Nourishing Avocado Eye Cream",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/revolution-skincare-hydrating-watermelon-eye-gel/12589146.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12589146-1864789675819116.jpg",
+      "name": "Revolution Skincare Hydrating Watermelon Eye Gel",
+      "papBanner_text": "Save 25%",
+      "papPopup_text": "Discount has been applied to the MSRP. Offer valid for a limited time only.",
+      "papPopup_link href": "https://www.skinstore.com/auto-pap/save-25.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "9.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Revolution Skincare Hydrating Watermelon Eye Gel",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/kat-burki-rose-hip-intense-recovery-eye-serum/11290669.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11290669-7044895694801537.jpg",
+      "name": "Kat Burki Rose Hip Intense Recovery Eye Serum",
+      "papBanner_text": "Select your Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "5.0 Stars 1 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 1,
+      "price": "135.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Kat Burki Rose Hip Intense Recovery Eye Serum",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/hydropeptide-uplifting-eye-gel/11523317.html",
+      "src": "https://s1.thcdn.com/",
+      "name": "HydroPeptide Uplifting Eye Gel",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "91.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "HydroPeptide Uplifting Eye Gel",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/colorescience-total-eye-restore-regimen-set/12052813.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/12052813-9784866377197830.jpg",
+      "name": "Colorescience Total Eye Restore Regimen Set",
+      "papBanner_text": "Colorescience Gift",
+      "papPopup_text": "Receive a FREE Colorescience Total Eye Hydrogel Treatment Mask when you spend 60 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/brands/colorescience/view-all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "165.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Colorescience Total Eye Restore Regimen Set",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "Colorescience Total Eye Hydrogel Treatment Mask - Free Gift With Purchase",
+      "papFreeGift_saving": "6.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/elizabeth-arden-prevage-clinical-lash-and-brow-enhancing-serum/10664990.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/10664990-6864896380713290.jpg",
+      "name": "Elizabeth Arden Prevage Clinical Lash and Brow Enhancing Serum",
+      "papBanner_text": "Select your Gift",
+      "papPopup_text": "Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while stocks last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "5.0 Stars 2 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 5,
+      "productBlock_reviewCount": 2,
+      "price": "105.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "Elizabeth Arden Prevage Clinical Lash and Brow Enhancing Serum",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/dermadoctor-kakadu-c-vitamin-c-brightening-kit/11412607.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11412607-1784955301116460.jpg",
+      "name": "DERMAdoctor Kakadu C Vitamin C Brightening Kit (129.00)",
+      "papBanner_text": "25% off SPF's",
+      "papPopup_text": "Discount has been applied to the cart automatically for valid products. Offer valid for a limited time only.",
+      "papPopup_link href": "https://www.skinstore.com/offers/category/spf.list",
+      "visually-hidden": "4.33 Stars 3 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 4.33,
+      "productBlock_reviewCount": 3,
+      "price": "89.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "DERMAdoctor Kakadu C Vitamin C Brightening Kit (129.00)",
+      "papFreeGift_image src": "",
+      "papFreeGift_title": "",
+      "papFreeGift_saving": ""
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/dermaquest-peptide-eye-firming-serum/11287249.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp//productimg/original/11287249-1954872047309919.jpg",
+      "name": "DermaQuest Peptide Eye Firming Serum",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "",
+      "productBlock_ratingStars href": "",
+      "productBlock_ratingValue": "",
+      "productBlock_reviewCount": "",
+      "price": "86.00",
+      "productQuickbuySimple": "Quick Buy",
+      "visually-hidden 2": "DermaQuest Peptide Eye Firming Serum",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    },
+    {
+      "productBlock_link href": "https://www.skinstore.com/niod-fractionated-eye-contour-concentrate-serum-15ml/11173731.html",
+      "src": "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11173731-1914625283652242.jpg",
+      "name": "NIOD Fractionated Eye Contour Concentrate Serum 15ml",
+      "papBanner_text": "Up to 20% off with code SAVE20 + 11-Piece Beauty Bag (87) when you spend 150+",
+      "papPopup_text": "Save 15% on select products or save 20% over 150 spend with code: SAVE20. Plus, receive a free 11-Piece Beauty Bag (87) when you spend 150+. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.",
+      "papPopup_link href": "https://www.skinstore.com/offers/all.list",
+      "visually-hidden": "3.44 Stars 9 Reviews",
+      "productBlock_ratingStars href": "[object Object]",
+      "productBlock_ratingValue": 3.44,
+      "productBlock_reviewCount": 9,
+      "price": "68.00",
+      "productQuickbuySimple": "",
+      "visually-hidden 2": "",
+      "papFreeGift_image src": "https://s1.thcdn.com//productimg/300/300/13697910-6594951928605092.jpg",
+      "papFreeGift_title": "11-Piece Beauty Bag (87)",
+      "papFreeGift_saving": "87.00"
+    }
+  ]
+    </script>
+     <script src="./script/Product.js"></script>
+    <script type="module" src="./script/headerFooter.js"></script>
+
+</body>
+
+</html>

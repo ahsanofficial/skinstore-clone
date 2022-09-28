@@ -1,0 +1,96 @@
+.breadcrumb{
+    font-size: 20px;
+}
+
+.carousel-item > img{
+    display: inline-block;
+    height: 500px;
+}
+.carouselExampleCaption{
+    width: 200px;
+    height: 100px;
+}
+
+.carousel, .slide{
+    width: 700px;
+    left: 150px;
+
+}
+
+.box{
+    border: 1px solid white;
+    height: 1020px;
+    width: 500px;
+    margin-left: 920px;
+    margin-top: -500px;
+}
+.Dr{
+    color: rgb(63, 58, 58);
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.dr{
+    color: rgb(4, 4, 4);
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.quantity{
+    margin-left: 0px;
+}
+
+.addtocart{
+    width: 100%;
+    height: 40px;
+    
+    background-color: rgb(35, 29, 29);
+    color: white;
+}
+
+.add{
+    border: solid 1px black;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 10px;
+    
+}
+.dis{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.addon{
+    margin-left: 19.5px;
+}
+
+.del{
+    margin-right: 0.3px;
+}
+
+.material-symbols-outlined:active{
+    background-color: red;
+}
+
+
+
+.bold{
+    font-weight: bold;
+}
+.para{
+    font-size: small;
+    font-weight: 100;
+
+}
+
+.material-symbols-outlined{
+    color: rgb(255, 183, 0);
+}
+
+@media (max-width:800px){
+    .div{
+        margin-left: 200px;
+    }
+}

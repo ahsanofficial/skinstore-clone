@@ -1,0 +1,155 @@
+.img-fluid{
+    position: relative;
+    top: 20px;
+    height: 30rem;
+    width: 95%;
+    padding-left: 37px;
+    
+}
+
+#first_picture{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 0;
+
+
+}
+#Mother{
+    position: absolute;
+   font-size: 2.9rem;
+    font-style: italic ;
+    font-weight: 400;
+     margin-left: 9.3rem;
+     top: 12rem;
+
+     
+
+}
+#shop{
+    position: absolute;
+    font-size: 110px;
+    font-weight: 200;
+    margin-left: 140px;
+    top: 14rem;
+}
+
+
+.btn {
+    position: absolute;
+    top: 23rem;
+    left: 14rem;
+    padding: 10px;
+    border-radius: none;
+    background-color: rgb(60, 50, 50);
+}
+
+
+.rounded{
+    width: 400px;
+    height: 400px;
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-top: 70px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+}
+
+h3{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: 10px;
+     
+
+}
+h1{
+    /* display: inline; */
+    /* margin-left: 40%; */
+text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+}
+h2{
+    padding-top: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.button1,.button2,.button3,.button4{
+    width: 100%;
+    height: 50%;
+    
+    background-color: rgb(35, 29, 29);
+    color: white;
+}
+
+.button1:hover,.button2:hover,.button3:hover,.button4:hover{
+    background-color: aqua;
+}
+
+@media only screen and (max-width: 950px) {
+    body {
+      background-color: lightblue;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+    }
+    #first_picture{
+        position: relative;
+        margin-top: 100px;
+        margin-left: 10%;
+        margin-right: 0;
+        width: 100%;
+    
+    }
+    .img-fluid{
+        position: relative;
+        top: 20px;
+        height: 30rem;
+        width: 100%;
+        padding-left: 0px;
+        
+    }
+    .container{
+        display: flex;
+        
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    h1{
+        /* display: inline; */
+        /* margin-left: 40%; */
+       text-align: center;
+    
+    }
+
+  }
+
+  @media only screen and (max-width: 800px) {
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+    }
+    .container{
+        display: grid;
+    
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        margin-top: 30px;
+        text-align: center;
+    }
+
+  }

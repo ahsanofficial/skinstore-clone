@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfcare</title>
+    <link rel="stylesheet" href="styles/productpage.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <div id="header"></div>
+    <div class="productDescription">
+        <a href="index.html"><h1>All Self-Care & Wellness Products</h1></a>
+        <p>18 results</p>
+    
+        <p>
+          It is important to take care of your body and 
+          keep your skin healthy, moistured and strong. 
+          Give your body the love it deserves with our 
+          incredible range of bath and body products. Our selection of skin care brands will give your skin much needed moisture that your body usually lacks, especially during winter. We recommend a daily regime, which includes exfoliation, toning and moisturizing. You can search by particular ingredient and concern!
+    
+      </p>
+       
+      </div>
+    
+      <div class="line"></div>
+    
+      <div id="container">
+        <li>
+           <a href="#"> Sort by price</a>
+           <a href="#"><img src="/image/down-arrow.png" alt="" /></a>
+
+          <div class="submenu">
+            <ul>
+              <li sort="lth" onclick="sortAscending()" class="sort">
+                price low to high
+              </li>
+              <li sort="htl" onclick="sortDescending()" class="sort">
+                price hight to low
+              </li>
+              <li sort="popularity">popularity</li>
+            </ul>
+          </div>
+          
+        </li>
+    
+        <input id="search" oninput="search()" placeholder="Search" />
+        <li>
+          <span> <a href="#">Category </a> </span>
+          <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>
+          <div class="submenu submenu-1">
+            <ul>
+              <li>Hair Preparation</li>
+              <li>Hair styling</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span> <a href="#">Brand</a> </span>
+          <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>
+          <div class="submenu submenu-1 submenu-2">
+            <ul>
+              <li>Afro-Caribbean</li>
+              <li>Braided</li>
+              <li>Colored</li>
+              <li>Curly & Wavy</li>
+              <li>Damaged</li>
+              <li>Dry</li>
+              <li>Fine</li>
+              <li>Frizzy</li>
+              <li>Graying</li>
+              <li>Long</li>
+              <li>Normal</li>
+              <li>Oily</li>
+              <li>Thick</li>
+              <li>Thinning</li>
+              <li>Weakened</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span> <a href="#">Electrical Hair Tools</a> </span>
+          <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>
+          <div class="submenu submenu-1">
+            <ul>
+              <li>Shampoo</li>
+              <li>Conditioner</li>
+              <li>Dry Shampoo</li>
+              <li>Hair & Scalp Treatments</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span> <a href="#">price</a> </span>
+          <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>
+          <div class="submenu submenu-1">
+            <ul>
+              <li>Curl Enhancers</li>
+              <li>Hair Cream</li>
+              <li>Hair Gel</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span> <a href="#">Hair Products</a> </span>
+          <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>
+          <div class="submenu submenu-1">
+            <ul>
+              <li>Anti-Frizz</li>
+              <li>Color Protection</li>
+              <li>Damage Repair</li>
+              <li>Hydrating</li>
+              <li>Volumizing</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span> <a href="#">Range</a> </span>
+          <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>
+          <div class="submenu submenu-1">
+            <ul>
+              <li>Karaite</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span> <a href="#">Reviews</a> </span>
+          <span
+            ><a href="#"><img src="/image/down-arrow.png" alt="" /></a
+          ></span>
+          <div class="submenu sub submenu-1">
+            <ul>
+              <li>price low to high</li>
+              <li>price hight to low</li>
+            </ul>
+          </div>
+        </li>
+      </div>
+      <div class="line"></div>
+      <div id="productDisplay"></div>
+
+      <div id="footer"></div>
+</body>
+</html>
+
+<script src="scripts/selfcareproducts.js" type="module">
+
+
+</script>

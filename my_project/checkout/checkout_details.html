@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            width: 35%;
+            border: 1px solid black;
+            margin: auto;
+            padding-left: 20px;
+            /* padding-right: 20px; */
+            padding-top: 20px;
+            margin-top: 50px;
+            border-radius: 4px 4px 4px 4px;
+            border: 2px solid black;
+        }
+
+        #form>label{
+            font-family: 'lato', serif;
+        }
+
+        #form>input{
+            width: 90%;
+            height: 40px;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            border: 1px solid gray;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        .expiry_date{
+            width: 91%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .expiry_date>select{
+            width: 42%;
+            height: 45px;
+            font-family: 'lato', serif;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        .images{
+            margin-bottom: 20px;
+        }
+
+        .checkbox{
+            display: flex;
+            font-family: 'lato', serif;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .order_submit{
+            width: 35%;
+            margin:auto;
+        }
+        .order_submit>button{
+            width: 520px;
+            height: 50px;
+            color: white;
+            font-family: 'lato', serif;
+            font-size: 17px;
+            background-color: #222222;
+            margin-top: 20px;
+        }
+
+        @media only screen and (min-width: 421px) and (max-width: 780px){
+            #form{
+            width: 90%;
+            border: 1px solid black;
+            margin: auto;
+            padding-left: 20px;
+            /* padding-right: 20px; */
+            padding-top: 20px;
+            margin-top: 50px;
+            border-radius: 4px 4px 4px 4px;
+            border: 2px solid black;
+        }
+
+        #form>label{
+            font-family: 'lato', serif;
+        }
+
+        #form>input{
+            width: 80%;
+            height: 30px;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            border: 1px solid gray;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        .expiry_date{
+            width: 81%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .expiry_date>select{
+            width: 40%;
+            height: 35px;
+            font-family: 'lato', serif;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        .images{
+            margin-bottom: 20px;
+        }
+
+        .checkbox{
+            display: flex;
+            font-family: 'lato', serif;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .order_submit{
+            width: 35%;
+            margin:auto;
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+        .order_submit>button{
+            width: 300px;
+            height: 40px;
+            color: white;
+            font-family: 'lato', serif;
+            font-size: 17px;
+            background-color: #222222;
+            margin-top: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 70px) and (max-width: 420px){
+            #form{
+            width: 90%;
+            border: 1px solid black;
+            margin: auto;
+            padding-left: 20px;
+            /* padding-right: 20px; */
+            padding-top: 20px;
+            margin-top: 50px;
+            border-radius: 4px 4px 4px 4px;
+            border: 2px solid black;
+        }
+
+        #form>label{
+            font-family: 'lato', serif;
+        }
+
+        #form>input{
+            width: 80%;
+            height: 30px;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            border: 1px solid gray;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        .expiry_date{
+            width: 81%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .expiry_date>select{
+            width: 40%;
+            height: 35px;
+            font-family: 'lato', serif;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        .images{
+            margin-bottom: 20px;
+        }
+
+        .checkbox{
+            display: flex;
+            font-family: 'lato', serif;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .order_submit{
+            /* width: 15%; */
+            margin:auto;
+            margin-left: 40px;
+            margin-bottom: 20px;  
+        } 
+        .order_submit>button{
+            width: 300px;
+            /* height: none; */
+            /* padding: 5px 200px 5px 200px; */
+            color: white;
+            font-family: 'lato', serif;
+            font-size: 17px;
+            background-color: #222222;
+            margin-top: 20px;
+        }
+    }
+
+        
+    </style>
+</head>
+<body>
+    <div id="form">
+        <label for="">Credit/Debit Card</label>
+        <br>
+        <div class="images">
+            <img src="https://cdn.trend.az/2008/06/10/Logo_VISA_180507.jpg" alt="" style="width: 7%; margin-bottom: 8px;">
+            <img src="https://i.pcmag.com/imagery/reviews/068BjcjwBw0snwHIq0KNo5m-15..v1602794215.png" alt="" style="width: 13%; margin-left: 10px;">
+            <img src="https://mea.mastercard.com/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="" style="width: 15%; margin-left: -8px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwcTrtKeZoxRKCmroyKok_-MtI1YRHT30Y6ELx4Ag90SFVeZSIJJGcMNGQ_nvnpl2F-M&usqp=CAU" alt="" style="width: 11%; margin-left: -8px;">
+            <img src="https://financialit.net/sites/default/files/american-express.png" alt="" style="width: 10%; margin-bottom: 8px;">
+            <img src="https://www.investopedia.com/thmb/JPZyTxQvXhP0EA7TQumPMJPQzWc=/1280x720/filters:fill(auto,1)/Discover-logo-28a70026a79d4023adafb0f5e2e773cf.jpg" alt="" style="width: 12%;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FFhlz4pih56ZfnNIdNF9joafCCi8KQjYz8DgvOFDcRBNkb9cENzttsOmvJdwKrejdlI&usqp=CAU" alt="" style="width: 10%;">
+        </div>
+        <label for="">Card Number</label>
+        <br>
+        <input type="number">
+        <br>
+        <label for="">Name on Card</label>
+        <br>
+        <input type="text">
+        <br>
+        <label for="">Expiry Date</label>
+        <div class="expiry_date">
+            <select name="" id="month">
+                <option value="month">Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+                <option value="mar">Mar</option>
+                <option value="apr">Apr</option>
+                <option value="may">May</option>
+                <option value="jun">Jun</option>
+                <option value="jul">Jul</option>
+                <option value="aug">Aug</option>
+                <option value="sep">Sept</option>
+                <option value="oct">Oct</option>
+                <option value="nov">Nov</option>
+                <option value="dec">Dec</option>
+            </select>
+            <select name="" id="month">
+                <option value="">Year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+            </select>
+        </div>
+        <br>
+        <label for="">Security Code</label>
+        <br>
+        <input type="number">
+        <br>
+        <div class="checkbox">
+            <input type="checkbox">
+            <label for="">Use my shipping address as my cardholder address</label>
+        </div>
+    </div>
+    <div class="order_submit"><button>SUBMIT MY ORDER</button></div>
+    
+</body>
+</html>
+
+<script>
+    document.querySelector(".order_submit").addEventListener("click",order_submit);
+    function order_submit(){
+        alert("Order placed successfully");
+        window.location.href="check_out.html"
+    }
+</script>

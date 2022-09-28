@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Care</title>
+  <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    * {
+      font-family: Lato-Light, Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    button,
+    img {
+      cursor: pointer;
+    }
+
+    button {
+      color: rgb(110, 104, 104);
+    }
+
+    #firstPara {
+      font-size: 50px;
+      text-align: center;
+      color: rgb(46, 51, 61);
+    }
+
+    #Shop-by-Ingredient {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    #Shop-by-Ingredient>div>img {
+      height: 250px;
+      width: 250px;
+    }
+
+
+    #firstImg {
+      margin-top: 40px;
+      /* border: 3px solid rgb(36, 35, 35); */
+      border-radius: 10px;
+      width: 100%;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #firstImg>div {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      padding: 60px 30px;
+      color: rgb(63, 62, 62);
+      width: 40%;
+      line-height: 2.8rem;
+    }
+
+    #content>p:nth-child(1) {
+      font-size: 80px;
+    }
+
+    #content>p:nth-child(2) {
+      font-size: 30px;
+    }
+
+    #firstImg button {
+      font-size: 20px;
+      padding: 17px;
+      border: none;
+      color: white;
+      background-color: rgb(63, 62, 62);
+    }
+
+    #firstImg button:hover {
+      background-color: rgb(30, 185, 185);
+      color: rgb(63, 62, 62);
+
+    }
+
+    #firstBtns {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #firstBtns>div>button {
+      padding: 15px 120px;
+      font-size: 20px;
+      border: none;
+      color: rgb(94, 91, 91);
+    }
+
+    #firstBtns>div>button:hover {
+      background-color: rgb(219, 209, 209);
+    }
+
+
+    #secondImg {
+      color: rgb(63, 62, 62);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      width: 98%;
+      margin: auto;
+      margin-top: 40px;
+      gap: 5px;
+    }
+
+    #secondImg>div {
+      text-align: center;
+    }
+
+    #secondImg>div>p {
+      width: 95%;
+      font-size: 18px;
+      color: rgb(110, 104, 104);
+    }
+
+    #secondImg>div>button {
+      padding: 15px 20px 15px 20px;
+      font-size: 20px;
+      background-color: white;
+    }
+
+    #secondImg>div>button:hover {
+      background-color: rgb(209, 243, 232);
+    }
+
+    #secondImg>div>img {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+    }
+
+    @media only screen and (min-width: 350px) and (max-width: 700px) {
+      #secondImg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        width: 95%;
+        margin: auto;
+        gap: 5px;
+      }
+
+      #secondImg>div>img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+    }
+
+    @media only screen and (min-width: 50px) and (max-width: 300px) {
+      #secondImg {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        width: 95%;
+        margin: auto;
+        gap: 5px;
+      }
+
+      #secondImg>div>img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+
+      #secondImg>div>button {
+        padding: 10px 20px 10px 20px;
+        font-size: 10px;
+      }
+    }
+
+    #Trending_Now {
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 50px) and (max-width: 300px) {
+      #Trending_Now>img {
+        height: 300px;
+        width: 300px;
+      }
+    }
+
+    /* second para */
+    #Best-Sellers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      width: 98%;
+      margin: auto;
+    }
+
+    #Best-Sellers>div {
+      padding: 8%;
+      text-align: center;
+    }
+
+    #Best-Sellers>div>p {
+      font-size: 20px;
+    }
+
+    #Best-Sellers>div>button {
+      padding: 15px 120px;
+      font-size: 20px;
+      padding: 10px 100px;
+      border: none;
+      background-color: rgb(46, 51, 61);
+      color: white;
+    }
+
+    #Best-Sellers>div>button:hover {
+      background-color: aqua;
+      color: black;
+      border: none;
+    }
+
+    #Best-Sellers>div>img {
+      height: 400px;
+      width: 400px;
+    }
+
+    @media only screen and (min-width: 350px) and (max-width: 700px) {
+      #Best-Sellers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+      }
+    }
+
+    @media only screen and (min-width: 50px) and (max-width: 300px) {
+      #Best-Sellers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+      }
+
+      #Best-Sellers>div>button {
+        padding: 10px 20px 10px 20px;
+        background-color: black;
+        color: white;
+      }
+    }
+
+    #lastcontent {
+      width: 90%;
+      line-height: 1.5rem;
+    }
+
+    .lastminiPara {
+      color: rgb(110, 104, 104);
+    }
+
+    #lastPara {
+      color: rgb(46, 51, 61);
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <hr>
+  <p id="firstPara">Shop by Ingredient</p>
+  <div id="Shop-by-Ingredient">
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/10/Page-001-095910.png"></div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/02/original-Page-002-095102.png"></div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/00/original-Page-003-095100.png"></div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/56/Page-004-095856.png"></div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/original-Page-005-095106.png"></div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/original-Page-005-095106.png"></div>
+  </div>
+
+  <div id="firstImg">
+    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/00/Shot_12_1180x450-083800.jpg"
+      style="width:100%;">
+    <div id="content">
+      <p>SKINCARE</p>
+      <p>Ravamp your skincare routine this season! Whether you're looking for acne treatments. anti-aging or sun care,
+        shop our full range of skincare products!</p>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+
+  <div id="firstBtns">
+    <div><button>SERUMS</button></div>
+    <div><button>MASKS</button></div>
+    <div><button>CLEANSERS</button></div>
+    <div><button>MOISTURIZERS</button></div>
+  </div>
+
+  <div id="secondImg">
+    <div><img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/50/original-1224-STDCRE-28425-WC-SS-SkinStore-January-Photography-2022-BATCHING_Shot17-500x500-023950.jpg">
+      <h2>SkinCeuticals Gift</h2>
+      <p>Receive a SkinCeuticals Phyto Corrective Gel 4ml (Free Gift) when you spend $150 or more on the brand.</p>
+      <button>SHOP NOW</button>
+    </div>
+    <div><img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/35/original-original-original-0429-STDCRE-13871-SS-CT-Summer-Commercial-Campaign-Photography-Batching-Priority-3-Shot_11.psd500x500-093656-100318-094035.jpg">
+      <h2>15% off SkinMedica + $14 Gift</h2>
+      <p>15% off SkinMedica + free SkinMedica Instant Bright Eye Cream .07oz (worth $14) when you spend $130+ on the
+        brand.</p>
+      <button>SHOP NOW</button>
+    </div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/53/original-Shot_9_500x500-070853.jpg">
+      <h2>Brand of the Month: First Aid Beauty</h2>
+      <p>No matter your skin care need, you can find First Aid Beauty products that work for you.</p>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+
+  <p id="firstPara">Best Sellers</p>
+  <div id="Best-Sellers">
+    <div>
+      <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/11289609-1174892770940184.jpg">
+      <p>SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml</p>
+      <p>$169.00</p>
+      <button>SHOP NOW</button>
+    </div>
+    <div>
+      <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/11429304-1984938699383949.jpg">
+      <p>The Ordinary AHA 30% + BHA 2% Peeling Solution 30ml</p>
+      <p>$8.00</p>
+      <button>SHOP NOW</button>
+    </div>
+    <div>
+      <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/11370303-1074944341868735.jpg">
+      <p>EltaMD UV Clear Broad-Spectrum SPF46</p>
+      <p>$39.00</p>
+      <button>SHOP NOW</button>
+    </div>
+    <div>
+      <img src="https://static.thcdn.com/images/small/webp//productimg/480/480/12596429-3594871019700125.jpg">
+      <p>SkinMedica TNS Advanced+ Serum 1oz</p>
+      <p>$250.75</p>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+
+  <p id="firstPara">Over On The Blog...</p>
+  <div id="secondImg">
+    <div><img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/18/1223-DPO660-PD-SS-Jan-batch-shot-15_1200x672_1610651093-070718.jpg">
+      <h2>Intentional Skin Care with Dermalogica</h2>
+      <p>Learn about Dermalogica at SkinStore!</p>
+      <button>READ MORE</button>
+    </div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/55/shot-211200X672_1609954468-070955.jpg">
+      <h2>Beauty Reset: Products Reveal Younger Skin</h2>
+      <p>Reset your skin this year with the right products!</p>
+      <button>READ MORE</button>
+    </div>
+    <div><img src="https://static.thcdn.com/images/small/webp/widgets/121-us/06/1200x672_1611689526-071206.jpg">
+      <h2>Hyaluronic Acid: The Secret Ingredient</h2>
+      <p>Learn about hyaluronic acid here at SkinStore!</p>
+      <button>READ MORE</button>
+    </div>
+  </div>
+
+  <div id="lastcontent">
+    <p id="firstPara">Skin Care</p>
+    <p class="lastminiPara">﻿Healthy skin starts with a commitment to a regular skin care regimen, using high quality
+      skin care and facial
+      products every day. While we often think of the face first when it comes to caring for the skin, the skin on the
+      body also needs attention. </p>
+    <p class="lastminiPara">We specialize in providing only the best products that care for skin from head to toe. Their
+      are many different
+      types of skincare products, Purifying cleansers, refreshing toners and hydrating moisturizers cover the basics for
+      the face. We also carry specialized treatments for concerns such as acne, aging and rosacea as well as targeted
+      products for specific areas like the eyes, neck and lips. </p>
+
+    <p id="lastPara">Facial Products</p>
+    <p class="lastminiPara">Beauty tools can also be found among our wide range of skin care products. In recent years,
+      these tools have gained
+      popularity due to their ability to boost the effects of any daily regimen and improve the quality of the skin. The
+      market has exploded with tools like electric cleansing brushes, light therapy devices and other at-home appliances
+      which provide treatments that until recently were only available in doctors’ offices and spas.﻿</p>
+
+    <p id="lastPara">Skin Care Products</p>
+    <p class="lastminiPara">Skin care products for the body include the basics like cleansers and moisturizers but we
+      also offer more specialized
+      products for areas like the hands and feet as well as treatments for concerns such as scars, stretch marks and
+      cellulite.</p>
+
+  </div>
+  <hr>
+  <div id="footer"></div>
+</body>
+<script type="module">
+  import head from "../header/header.js";
+document.getElementById('header').innerHTML=head();
+
+
+import footer from "../footer/footer.js";
+document.getElementById('footer').innerHTML=footer();
+</script>
+
+</html>

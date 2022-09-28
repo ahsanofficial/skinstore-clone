@@ -1,0 +1,173 @@
+
+/* *****************************footer part****************** */
+#connect_with_us{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    margin-left: 40px;
+}
+#connect_with_us>div>p{
+    font-size: 20px;
+}
+#connect_with_us>div>a>button{
+    padding: 15px 20px 15px 20px;
+    background-color: black;
+    color: white;
+}
+#connect_with_us>div>a>button:hover{
+    background-color: rgb(7, 161, 161);
+    color: black;
+    border: none;
+}
+#connect_with_us>div>a>i{
+    margin-left: 10px;
+}
+.fa-facebook-f{
+    background-color:rgb(69,101,162);
+    color: white;
+    padding: 8px;
+    border-radius:50%;
+    font-size: 30px;
+}
+.fa-instagram{
+    padding: 8px;
+    border-radius:50%;
+    background-color:rgb(217,49,117);
+    color: white;
+    font-size: 30px;
+}
+.fa-twitter{
+    padding: 8px;
+    border-radius:50%;
+    background-color:rgb(25, 154, 205);
+    color: white;
+    font-size: 30px; 
+}
+.fa-snapchat{
+    padding: 8px;
+    border-radius:50%;
+    background-color:yellow;
+    color: white;
+    font-size: 30px;  
+}
+.fa-pinterest{
+    padding: 8px;
+    border-radius:50%;
+    background-color:rgb(230,0,35);
+    color: white;
+    font-size: 30px;  
+}
+@media only screen and (min-width: 50px) and (max-width: 300px){
+    #connect_with_us{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-left: -1px;
+        gap: 5px;
+    }
+    #connect_with_us>div>a>i{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+
+#help{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    margin-left: 40px;
+    gap: 10px;
+}
+@media only screen and (min-width: 50px) and (max-width: 300px){
+    #help{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-left: 40px;
+        gap: 10px;
+    }  
+}
+.information>p{
+    font-size: 20px;
+}
+#help_box{
+    display: flex;
+    gap: 20px;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.about>div>ul>li>p{
+    font-size: 20px;
+}
+.about>div>ul{
+    list-style: none;
+   
+}
+.about>div>ul>li>ul{
+    list-style: none;
+}
+@media only screen and (min-width: 50px) and (max-width: 300px){
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-left: -60px;
+    }
+    #help_box>i{
+        font-size: 20px;
+    }
+}
+#thg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    margin-left: 40px;
+}
+.fa-cc-visa{
+    padding: 8px;
+    border-radius:50%;
+    background-color:blue;
+    color: white;
+    font-size: 30px;
+}
+.fa-cc-mastercard{
+    padding: 8px;
+    border-radius:50%;
+    background-color:RED;
+    color: white;
+    font-size: 30px;
+}
+.fa-cc-diners-club{
+    padding: 8px;
+    border-radius:50%;
+    background-color:blue;
+    color: white;
+    font-size: 30px;
+}
+.fa-cc-paypal{
+    padding: 8px;
+    border-radius:50%;
+    background-color:blue;
+    color: white;
+    font-size: 30px;
+}
+.fa-alipay{
+    padding: 8px;
+    border-radius:50%;
+    background-color:rgb(15, 157, 212);
+    color: white;
+    font-size: 30px;
+}
+@media only screen and (min-width: 50px) and (max-width: 300px){
+    #thg{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-left: -1px;
+    }
+}
